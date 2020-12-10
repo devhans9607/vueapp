@@ -9,6 +9,7 @@ module.exports = {
         './src/app.js'
     ],
     devServer: {
+        port: 3000,
         hot: true,
         watchOptions: {
             poll: true
