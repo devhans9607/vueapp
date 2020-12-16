@@ -22,7 +22,6 @@ export default {
       axios
           .get("http://localhost:8080/api/v1/posts")
           .then(res => {
-            console.log("받았다고~!!");
             console.log(res.data.content.simplePostPage.content);
             this.posts = res.data.content.simplePostPage.content;
             //this.totalPage = res.data.total_pages;

@@ -13,9 +13,11 @@ module.exports = {
         hot: true,
         watchOptions: {
             poll: true
-        }
+        },
+        historyApiFallback: true
     },
     module: {
+        
         rules: [
             {
                 test: /\.vue$/,
