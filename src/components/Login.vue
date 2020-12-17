@@ -95,7 +95,6 @@ export default {
             }
 
         )
-        this.console.log("didslkjfkl")
       }
     }
   }

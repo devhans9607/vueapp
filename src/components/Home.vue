@@ -3,6 +3,7 @@
     <header class="jumbotron">
       <h3>Home content</h3>
     </header>
+
   </div>
 </template>
 
