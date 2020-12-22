@@ -87,8 +87,12 @@ export default {
         this.$store.dispatch('auth/login', this.user).then(
             () => {
               console.log("before proceeding profile")
-              this.$router.push('/')
+              // this.$router.push('/')
+              // window.location.reload(true)
+              this.$forceUpdate();
             },
+
+
             error => {
               this.loading = false
               this.message = error.message

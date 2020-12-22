@@ -34,7 +34,8 @@ import User from '../components/User.vue'
 import Home2 from "../components/v2/Home.vue"
 import Login2 from "../components/v2/Login.vue"
 import Me2 from "../components/v2/Me.vue"
-
+import Detail from "../components/v2/Detail.vue"
+import Write from "../components/v2/Write.vue"
 
 
 
@@ -100,6 +101,17 @@ const routes = [
         path: '/user',
         name:  'user',
         component: User
+    },
+    {
+        path: '/detail',
+        name: 'detail',
+        component: Detail
+    },
+    {
+        path: '/write',
+        name: 'write',
+        component: Write,
+        beforeEnter: requireAuth()
     }
 ]
 
